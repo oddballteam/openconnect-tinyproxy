@@ -1,0 +1,3 @@
+#!/bin/sh -e
+tinyproxy -d -c /root/tinyproxy.conf &
+exec openconnect https://cloud.cms.gov
