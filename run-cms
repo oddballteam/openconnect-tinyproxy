@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+set -x -eu -o pipefail
+export OPENCONNECT_SERVER='https://cloud.cms.gov/'
+./run

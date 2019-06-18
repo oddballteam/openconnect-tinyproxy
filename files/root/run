@@ -1,3 +1,9 @@
-#!/bin/sh -e
+#!/bin/sh -ex
 tinyproxy -d -c /root/tinyproxy.conf &
-exec openconnect https://cloud.cms.gov
+
+oc_opts=""
+[ -n "$OPENCONNECT_USER" ] && oc_opts="$oc_opts --user $OPENCONNECT_USER"
+[ -n "$OPENCONNECT_AUTHGROUP" ] && oc_opts="$oc_opts --authgroup $OPENCONNECT_AUTHGROUP"
+
+# shellcheck disable=SC2086
+exec openconnect $oc_opts "$OPENCONNECT_SERVER"

@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+set -x -eu -o pipefail
+export OPENCONNECT_SERVER=nerve-b.mitre.org
+export OPENCONNECT_AUTHGROUP=NERVE-Basic
+./run
