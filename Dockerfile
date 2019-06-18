@@ -1,5 +1,6 @@
 FROM alpine:edge
 
+ARG CACHE_APK
 RUN set -ex \
     && echo '@testing http://dl-cdn.alpinelinux.org/alpine/edge/testing' >>/etc/apk/repositories \
     && apk update \

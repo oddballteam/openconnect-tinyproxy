@@ -1,3 +1,7 @@
 #!/usr/bin/env bash
 set -x -eu -o pipefail
-docker build -t openconnect-tinyproxy .
+
+# bust the cache daily
+CACHE_APK=$(date '+%Y-%m-%d')
+
+docker build --build-arg CACHE_APK="$CACHE_APK" -t openconnect-tinyproxy .
