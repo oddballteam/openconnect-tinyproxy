@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 set -x -e -o pipefail
 : "${OPENCONNECT_SERVER?You MUST set this environment variable.}"
-docker run --rm --privileged -it -p 8888:8888 \
+docker run --rm --privileged -it -p 8888:8888 ${HOST_CONFIG} \
         -e OPENCONNECT_USER -e OPENCONNECT_AUTHGROUP -e OPENCONNECT_SERVER \
         openconnect-tinyproxy
