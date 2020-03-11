@@ -1,7 +1,12 @@
 #!/usr/bin/env bash
 set -x -eu -o pipefail
 export OPENCONNECT_SERVER='https://cloudvpn.cms.gov/'
-export HOST_CONFIG="--add-host=www.cedarimpl.cms.gov:10.138.78.45 \
+export HOST_CONFIG="--add-host=www.cedardev.cms.gov:10.235.62.15 \
+--add-host=aris.cedardev.cms.gov:10.235.62.15 \
+--add-host=alfabet.cedardev.cms.gov:10.235.62.15 \
+--add-host=webmethods-apigw.cedardev.cms.gov:10.235.62.15 \
+--add-host=webmethods-apiportal.cedardev.cms.gov:10.235.62.15 \
+--add-host=www.cedarimpl.cms.gov:10.138.78.45 \
 --add-host=aris.cedarimpl.cms.gov:10.138.78.45 \
 --add-host=alfabet.cedarimpl.cms.gov:10.138.78.45 \
 --add-host=webmethods-apigw.cedarimpl.cms.gov:10.138.78.45 \
