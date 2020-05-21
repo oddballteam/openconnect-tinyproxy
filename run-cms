@@ -10,5 +10,10 @@ export HOST_CONFIG="--add-host=www.cedardev.cms.gov:10.235.62.15 \
 --add-host=aris.cedarimpl.cms.gov:10.138.78.45 \
 --add-host=alfabet.cedarimpl.cms.gov:10.138.78.45 \
 --add-host=webmethods-apigw.cedarimpl.cms.gov:10.138.78.45 \
---add-host=webmethods-apiportal.cedarimpl.cms.gov:10.138.78.45"
+--add-host=webmethods-apiportal.cedarimpl.cms.gov:10.138.78.45 \
+--add-host=www.cedar.cms.gov:10.245.38.21 \
+--add-host=aris.cedar.cms.gov:10.245.38.21 \
+--add-host=alfabet.cedar.cms.gov:10.245.38.21 \
+--add-host=webmethods-apigw.cedar.cms.gov:10.245.38.21 \
+--add-host=webmethods-apiportal.cedar.cms.gov:10.245.38.21"
 ./run
