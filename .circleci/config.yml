@@ -2,7 +2,7 @@ version: 2
 jobs:
   pre-test:
     docker:
-      - image: trussworks/circleci-docker-primary:a18ba9987556eec2e48354848a3c9fb4d5b69ac8
+      - image: &circleci trussworks/circleci:6986bb9022e5a83599feb66a7128a2d0fa12732a
     steps:
       - checkout
 
