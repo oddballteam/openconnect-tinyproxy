@@ -3,6 +3,9 @@ jobs:
   pre-test:
     docker:
       - image: &circleci trussworks/circleci:6986bb9022e5a83599feb66a7128a2d0fa12732a
+        auth:
+          password: $DOCKER_PASSWORD
+          username: $DOCKER_USERNAME
     steps:
       - checkout
 
@@ -30,5 +33,7 @@ workflows:
   version: 2
   validate:
     jobs:
-      - pre-test
+      - pre-test:
+        context:
+        - org-global
       - build
