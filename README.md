@@ -35,7 +35,9 @@ To run the container for the eApp project:
 ```
 
 You'll be prompted to enter your credentials. This is your username, password, and the second password is the OTP code for VPN access. If you did things right, you will see an open connection and a message along the lines of “You are accessing a U.S. Government information system”.
+
 ## Configuration
+
  For best performance, run a second browser pointed at the proxy so your primary browser is free.
 
 ### To use in Firefox
@@ -48,7 +50,8 @@ Here's an example of how to configure Firefox (General > Network Settings):
 
 Or instead, consider using FoxyProxy [extension](https://addons.mozilla.org/en-US/firefox/addon/foxyproxy-standard/)
 
-### To use in Chrome 
+### To use in Chrome
+
 Consider using [FoxyProxy](https://chrome.google.com/webstore/detail/foxyproxy-standard/gcknhkkoolaabfmlnjonogaaifnjlfnp?hl=en).
 
 ## Development
